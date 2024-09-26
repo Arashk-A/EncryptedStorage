@@ -1,7 +1,7 @@
 # EncryptedStorage
 
 ![](https://img.shields.io/badge/Swift-5.4-green.svg)
-![](https://img.shields.io/badge/iOS-11-green.svg)
+![](https://img.shields.io/badge/iOS-13-green.svg)
 ![](https://img.shields.io/badge/macOS-10.13-green.svg)
 ![](https://img.shields.io/badge/license-MIT-blue.svg)
 
@@ -27,7 +27,7 @@ To install `EncryptedStorage` using Swift Package Manager, add the following to 
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/your-repo/EncryptedStorage.git", from: "1.0.0")
+    .package(url: "https://github.com/Arashk-A/EncryptedStorage.git", from: "1.0.0")
 ]
 ```
 
@@ -129,7 +129,7 @@ let crypto = Crypto(type: .AES) // Or choose any supported type
 
 ## License
 
-This library is available under the MIT license. See the MIT-License file for more details.
+This library is available under the MIT license. See the LICENSE file for more details.
 
 ---
 
