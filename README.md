@@ -35,7 +35,7 @@ Alternatively, you can add it directly via Xcode:
 
 1. Open your project in Xcode.
 2. Go to **File > Add Packages**.
-3. Enter the repository URL: `https://github.com/your-repo/EncryptedStorage.git`.
+3. Enter the repository URL: `https://github.com/Arashk-A/EncryptedStorage.git`.
 4. Select your project and the appropriate target.
 
 ### Manual Installation
