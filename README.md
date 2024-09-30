@@ -106,6 +106,27 @@ do {
 }
 ```
 
+### 5. Using custom cryptographic 
+
+To use custom cryptographic for encryption:
+
+```swift 
+
+struct MyCrypto: CryptoProtocol {
+  func decrypt(message: String, key: String) throws -> Data {
+    return Data()
+  }
+  
+  func encrypt(message: Data, key: String) throws -> String {
+    return ""
+  }
+}
+
+let myCrypto = MyCrypto()
+let storage = EncryptedStorage(crypto: myCrypto)
+
+```
+
 ---
 
 ## Encryption Types
