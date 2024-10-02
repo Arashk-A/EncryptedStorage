@@ -8,6 +8,7 @@
 import Foundation
 
 public protocol EncryptedStorable {
+  var crypto: CryptoProtocol { get }
   func store(to fileName: String, message: Data, password: String) throws
   func load(fileName: String, password: String) throws -> Data
   func remove(fileName: String) throws
@@ -23,8 +24,8 @@ public enum StorageError: LocalizedError, Equatable {
   case failedToEncodeSaveData
 }
 
-public struct EncryptedStorage {
-  let crypto: CryptoProtocol
+public struct EncryptedStorage: EncryptedStorable {
+  public let crypto: CryptoProtocol
   
   public init(crypto: CryptoProtocol) {
     self.crypto = crypto

@@ -121,18 +121,18 @@ public enum EncryptionType {
   
   var keyLength: Int {
     switch self {
-    case .AES:
-      kCCKeySizeAES128
-    case .Blowfish:
-      kCCKeySizeMinBlowfish
-    case .DES:
-      kCCKeySizeDES
-    case .TripleDES:
-      kCCKeySize3DES
-    case .CAST:
-      kCCKeySizeMaxCAST
-    case .RC4:
-      kCCKeySizeMinRC4
+	  case .AES:
+		kCCKeySizeAES128
+	  case .Blowfish:
+		kCCKeySizeMinBlowfish
+	  case .DES:
+		kCCKeySizeDES
+	  case .TripleDES:
+		kCCKeySize3DES
+	  case .CAST:
+		kCCKeySizeMaxCAST
+	  case .RC4:
+		kCCKeySizeMinRC4
     }
   }
   

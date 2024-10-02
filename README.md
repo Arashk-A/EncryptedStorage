@@ -113,13 +113,15 @@ To use custom cryptographic for encryption:
 ```swift 
 
 struct MyCrypto: CryptoProtocol {
-  func decrypt(message: String, key: String) throws -> Data {
-    return Data()
+
+  func encrypt(message: Data, key: String) throws -> String {
+	// Add your encryption method
   }
   
-  func encrypt(message: Data, key: String) throws -> String {
-    return ""
+  func decrypt(message: String, key: String) throws -> Data {
+    // Add your decryption method
   }
+
 }
 
 let myCrypto = MyCrypto()
